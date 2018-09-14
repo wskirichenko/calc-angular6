@@ -1,0 +1,10 @@
+<input type="text" 
+[(ngModel)]="textInp">
+
+<button 
+  *ngFor="let btn1 of btnNum1"
+  class="btn btn-primary" 
+  (click)="btnClick(btn1)"
+  [innerHTML]="btn1"
+>
+</button>
