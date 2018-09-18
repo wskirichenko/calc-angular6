@@ -7,7 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CalcComponent  {
   btnNum: string = '1';
-  @Input() importTest: string;
 
   constructor() { }
 

@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-btncalc',
@@ -6,11 +6,11 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./btncalc.component.css']
 })
 export class BtncalcComponent implements OnInit {
-  btnNum1 = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
+  btnNum1 = ['9','8','7','6','5','4','3','2','1','0'];
   textInp = '';
 
   btnClick(btn1) {
-    this.textInp = this.btnNum1[btn1];
+    this.textInp = this.textInp+btn1;
     return this.textInp;
   }
   constructor() { }
