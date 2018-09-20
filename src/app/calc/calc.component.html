@@ -1,11 +1,8 @@
 <div class="row">
-	<input type="text" [(ngModel)]="btnNum">	
-    <p> w {{importTest}}</p>
-</div>    
-<div class="row">
-    <button class="btn btn-primary" [innerHTML]="btnNum">
+	<app-vivod [clickCount]="cnt" >
 
-    </button>
+	</app-vivod>
+	<app-btnc (clickChange)="onAClicked($event)">
 
+	</app-btnc>
 </div>
-    <app-btncalc></app-btncalc>

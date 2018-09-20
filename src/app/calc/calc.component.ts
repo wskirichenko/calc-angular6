@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-calc',
@@ -6,8 +6,10 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./calc.component.css']
 })
 export class CalcComponent  {
-  btnNum: string = '1';
+	cnt :number = 0;
+	public onAClicked(cnt){
+	  this.cnt = cnt;
+	}
 
-  constructor() { }
-
+	constructor() { }
 }
