@@ -10,6 +10,10 @@ import { CompBComponent } from './comp-b/comp-b.component';
 import { ShareService } from './share.service';
 import { VivodComponent } from './calc/vivod/vivod.component';
 import { BtncComponent } from './calc/btnc/btnc.component';
+import { OperatComponent } from './calc/operat/operat.component';
+import { MydirectivDirective } from './mydirectiv/mydirectiv.directive';
+import { ColorDirectDirective } from './mydirectiv/color-direct.directive';
+import { NewDirectiveDirective } from './mydirectiv/new-directive.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { BtncComponent } from './calc/btnc/btnc.component';
     CompAComponent,
 	CompBComponent,
 	VivodComponent,
-	BtncComponent
+	BtncComponent,
+	OperatComponent,
+	MydirectivDirective,
+	ColorDirectDirective,
+	NewDirectiveDirective
   ],
   imports: [
     BrowserModule,

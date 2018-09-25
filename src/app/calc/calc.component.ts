@@ -11,5 +11,6 @@ export class CalcComponent  {
 	  this.cnt = cnt;
 	}
 
+	evenNumbers = ['1','2'];
 	constructor() { }
 }

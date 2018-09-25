@@ -11,9 +11,4 @@ export class VivodComponent implements OnInit {
 	constructor() { }
 	ngOnInit() {
 	}
-
-	log() {
-		
-	}
-
 }

@@ -5,4 +5,21 @@
 	<app-btnc (clickChange)="onAClicked($event)">
 
 	</app-btnc>
+
+	<app-operat></app-operat>
+	<p appMydirectiv> Текст для директивы</p>
+	<p [appColorDirect]="'green'" [defaultColor]="'red'"> Текст для директивы appColorDirect</p>
+	<!-- <p appColorDirect [defaultColor]="'red'" [new2Color]="'green'"> Текст для директивы appColorDirect</p> -->
+
+	<!-- <div *appNewDirective="!onlyOdd">
+		<li
+			class="list-grup-item"
+			[ngClass]="{odd: even % 2 !== 0}"
+			[ngStyle]="backgroundColor: even % 2 !== 0 ? 'green' : 'blue'"
+			*ngFor="let even of evenNumbers"
+		>
+			{{even}}
+		</li>
+	</div> -->
+
 </div>

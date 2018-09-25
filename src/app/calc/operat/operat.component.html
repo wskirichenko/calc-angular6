@@ -1,0 +1,9 @@
+<div class="row">
+	<button
+		class="btn btn-danger"
+		*ngFor="let op of opMass"
+		[innerHTML]="op"
+		(click)="onClik($event)"
+	>
+	</button>
+</div>
