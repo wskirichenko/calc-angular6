@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-vivod',
@@ -6,7 +6,13 @@ import { Component, OnInit, Input } from '@angular/core';
   styleUrls: ['./vivod.component.css']
 })
 export class VivodComponent implements OnInit {
-	@Input() clickCount: number;
+	@Input() clickCount: string;
+
+    @Output() userNameChange = new EventEmitter<string>();
+    onNameChange(model: string){   
+        this.clickCount = model;
+        this.userNameChange.emit(model);
+    }
 
 	constructor() { }
 	ngOnInit() {

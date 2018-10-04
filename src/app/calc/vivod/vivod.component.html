@@ -1,4 +1,4 @@
 <div class="row">
-	<input type="text" [(ngModel)]="clickCount">
+	<input type="text" [ngModel]="clickCount"  (ngModelChange)="onNameChange($event)" >
 	<!-- <p> Test {{clickCount}}</p> -->
 </div> 
